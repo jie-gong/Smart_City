@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.MovieSessionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.MovieSession">
+        <id column="id" property="id" />
+        <result column="Movieid" property="Movieid" />
+        <result column="Movietitle" property="Movietitle" />
+        <result column="begin" property="begin" />
+        <result column="end" property="end" />
+        <result column="MovieName" property="MovieName" />
+        <result column="price" property="price" />
+        <result column="MovieType" property="MovieType" />
+        <result column="play_type" property="playType" />
+        <result column="pricing" property="pricing" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, Movieid, Movietitle, begin, end, MovieName, price, MovieType, play_type, pricing
+    </sql>
+
+</mapper>

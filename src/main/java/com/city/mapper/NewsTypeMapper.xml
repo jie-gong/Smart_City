@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.NewsTypeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.NewsType">
+        <id column="id" property="id" />
+        <result column="searchValue" property="searchValue" />
+        <result column="createBy" property="createBy" />
+        <result column="createTime" property="createTime" />
+        <result column="updateBy" property="updateBy" />
+        <result column="updateTime" property="updateTime" />
+        <result column="remark" property="remark" />
+        <result column="dictCode" property="dictCode" />
+        <result column="dictSort" property="dictSort" />
+        <result column="dictLabel" property="dictLabel" />
+        <result column="dictValue" property="dictValue" />
+        <result column="dictType" property="dictType" />
+        <result column="cssClass" property="cssClass" />
+        <result column="listClass" property="listClass" />
+        <result column="isDefault" property="isDefault" />
+        <result column="status" property="status" />
+        <result column="defaults" property="defaults" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, searchValue, createBy, createTime, updateBy, updateTime, remark, dictCode, dictSort, dictLabel, dictValue, dictType, cssClass, listClass, isDefault, status, defaults
+    </sql>
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.FpseekMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.Fpseek">
+        <id column="seekid" property="seekid" />
+        <result column="seektitle" property="seektitle" />
+        <result column="seektime" property="seektime" />
+        <result column="seeker" property="seeker" />
+        <result column="seekcontent" property="seekcontent" />
+        <result column="tel" property="tel" />
+        <result column="userid" property="userid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        seekid, seektitle, seektime, seeker, seekcontent, tel, userid
+    </sql>
+
+</mapper>

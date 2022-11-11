@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.MovieCommentMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.MovieComment">
+        <id column="id" property="id" />
+        <result column="Movieid" property="Movieid" />
+        <result column="mark" property="mark" />
+        <result column="conment" property="conment" />
+        <result column="conmentTime" property="conmentTime" />
+        <result column="username" property="username" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, Movieid, mark, conment, conmentTime, username
+    </sql>
+
+</mapper>

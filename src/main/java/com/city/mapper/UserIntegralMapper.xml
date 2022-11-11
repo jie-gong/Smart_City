@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.UserIntegralMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.UserIntegral">
+        <id column="id" property="id" />
+        <result column="integral" property="integral" />
+        <result column="way" property="way" />
+        <result column="userid" property="userid" />
+        <result column="time" property="time" />
+        <result column="recording" property="recording" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, integral, way, userid, time, recording
+    </sql>
+
+</mapper>

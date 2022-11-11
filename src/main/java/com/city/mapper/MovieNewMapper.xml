@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.MovieNewMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.MovieNew">
+        <id column="id" property="id" />
+        <result column="title" property="title" />
+        <result column="time1" property="time1" />
+        <result column="like1" property="like1" />
+        <result column="msg" property="msg" />
+        <result column="img" property="img" />
+        <result column="movieid" property="movieid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, title, time1, like1, msg, img, movieid
+    </sql>
+
+</mapper>

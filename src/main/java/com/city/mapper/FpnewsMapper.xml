@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.FpnewsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.Fpnews">
+        <id column="newsid" property="newsid" />
+        <result column="newstitle" property="newstitle" />
+        <result column="newsreporter" property="newsreporter" />
+        <result column="reporttime" property="reporttime" />
+        <result column="newspicture" property="newspicture" />
+        <result column="newscontent" property="newscontent" />
+        <result column="readnum" property="readnum" />
+        <result column="isfront" property="isfront" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        newsid, newstitle, newsreporter, reporttime, newspicture, newscontent, readnum, isfront
+    </sql>
+
+</mapper>

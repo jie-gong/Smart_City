@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.User">
+        <id column="id" property="id" />
+        <result column="searchValue" property="searchValue" />
+        <result column="createBy" property="createBy" />
+        <result column="createTime" property="createTime" />
+        <result column="updateBy" property="updateBy" />
+        <result column="updateTime" property="updateTime" />
+        <result column="remark" property="remark" />
+        <result column="userId" property="userId" />
+        <result column="deptId" property="deptId" />
+        <result column="username" property="username" />
+        <result column="nickName" property="nickName" />
+        <result column="email" property="email" />
+        <result column="phonenumber" property="phonenumber" />
+        <result column="sex" property="sex" />
+        <result column="avatar" property="avatar" />
+        <result column="salt" property="salt" />
+        <result column="status" property="status" />
+        <result column="delFlag" property="delFlag" />
+        <result column="loginIp" property="loginIp" />
+        <result column="loginDate" property="loginDate" />
+        <result column="password" property="password" />
+        <result column="idCard" property="idCard" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        searchValue, createBy, createTime, updateBy, updateTime, remark, userId, deptId, username, nickName, email, phonenumber, sex, avatar, salt, status, delFlag, loginIp, loginDate, password, id, idCard
+    </sql>
+
+</mapper>

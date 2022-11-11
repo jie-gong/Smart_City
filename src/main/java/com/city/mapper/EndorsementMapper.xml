@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.EndorsementMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.Endorsement">
+        <id column="id" property="id" />
+        <result column="userId" property="userId" />
+        <result column="cph" property="cph" />
+        <result column="disposeType" property="disposeType" />
+        <result column="violationType" property="violationType" />
+        <result column="place" property="place" />
+        <result column="time" property="time" />
+        <result column="punishMessage" property="punishMessage" />
+        <result column="manageMessage" property="manageMessage" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, userId, cph, disposeType, violationType, place, time, punishMessage, manageMessage
+    </sql>
+
+</mapper>

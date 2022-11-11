@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.FpapplyMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.Fpapply">
+        <id column="applyid" property="applyid" />
+        <result column="applytitle" property="applytitle" />
+        <result column="applydesc" property="applydesc" />
+        <result column="applycontent" property="applycontent" />
+        <result column="villid" property="villid" />
+        <result column="starttime" property="starttime" />
+        <result column="helpdesc" property="helpdesc" />
+        <result column="applystate" property="applystate" />
+        <result column="userid" property="userid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        applyid, applytitle, applydesc, applycontent, villid, starttime, helpdesc, applystate, userid
+    </sql>
+
+</mapper>

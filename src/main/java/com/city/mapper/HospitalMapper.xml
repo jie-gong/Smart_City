@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.HospitalMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.Hospital">
+        <id column="id" property="id" />
+        <result column="searchValue" property="searchValue" />
+        <result column="createBy" property="createBy" />
+        <result column="createTime" property="createTime" />
+        <result column="updateBy" property="updateBy" />
+        <result column="updateTime" property="updateTime" />
+        <result column="remark" property="remark" />
+        <result column="hospitalName" property="hospitalName" />
+        <result column="brief" property="brief" />
+        <result column="level" property="level" />
+        <result column="imgUrl" property="imgUrl" />
+        <result column="hospitalId" property="hospitalId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, searchValue, createBy, createTime, updateBy, updateTime, remark, hospitalName, brief, level, imgUrl, hospitalId
+    </sql>
+
+</mapper>

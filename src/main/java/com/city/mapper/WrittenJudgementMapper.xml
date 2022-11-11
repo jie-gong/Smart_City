@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.WrittenJudgementMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.WrittenJudgement">
+        <id column="id" property="id" />
+        <result column="pes" property="pes" />
+        <result column="number" property="number" />
+        <result column="userName" property="userName" />
+        <result column="jszFileNumber" property="jszFileNumber" />
+        <result column="jszNumber" property="jszNumber" />
+        <result column="quasiDrivingType" property="quasiDrivingType" />
+        <result column="tel" property="tel" />
+        <result column="cph" property="cph" />
+        <result column="vehicleType" property="vehicleType" />
+        <result column="fzOffice" property="fzOffice" />
+        <result column="violationDate" property="violationDate" />
+        <result column="behavior" property="behavior" />
+        <result column="address" property="address" />
+        <result column="money" property="money" />
+        <result column="integral" property="integral" />
+        <result column="punishOffice" property="punishOffice" />
+        <result column="punishDate" property="punishDate" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, pes, number, userName, jszFileNumber, jszNumber, quasiDrivingType, tel, cph, vehicleType, fzOffice, violationDate, behavior, address, money, integral, punishOffice, punishDate
+    </sql>
+
+</mapper>

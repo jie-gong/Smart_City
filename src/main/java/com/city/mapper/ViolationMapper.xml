@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.city.mapper.ViolationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.city.bean.Violation">
+        <id column="id" property="id" />
+        <result column="searchValue" property="searchValue" />
+        <result column="createBy" property="createBy" />
+        <result column="createTime" property="createTime" />
+        <result column="updateBy" property="updateBy" />
+        <result column="updateTime" property="updateTime" />
+        <result column="remark" property="remark" />
+        <result column="licencePlate" property="licencePlate" />
+        <result column="disposeState" property="disposeState" />
+        <result column="badTime" property="badTime" />
+        <result column="money" property="money" />
+        <result column="deductMarks" property="deductMarks" />
+        <result column="illegalSites" property="illegalSites" />
+        <result column="noticeNo" property="noticeNo" />
+        <result column="engineNumber" property="engineNumber" />
+        <result column="catType" property="catType" />
+        <result column="dese" property="dese" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, searchValue, createBy, createTime, updateBy, updateTime, remark, licencePlate, disposeState, badTime, money, deductMarks, illegalSites, noticeNo, engineNumber, catType, dese
+    </sql>
+
+</mapper>

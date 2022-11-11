@@ -1,0 +1,27 @@
+#项目启动端口
+server:
+  port: 8082
+#数据源配置
+spring:
+#    mvc:
+#      static-path-pattern: /static/**
+  datasource:
+    username: root
+    password: 1234
+#    url: jdbc:mysql://localhost:3306/city?characterEncoding=UTF8&autoReconnect=true&useSSL=true
+    url: jdbc:mysql://localhost:3306/city?useUnicode=true&characterEncoding=utf8&useSSL=false&&serverTimezone=CST
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#配置mybatis
+mybatis:
+  mapper-locations: classpath:com/city/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+#sql语句日志打印
+logging:
+  level:
+    com:
+      mashibing:
+        mapper: debug
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
